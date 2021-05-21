@@ -11,7 +11,7 @@ const authReducer: Reducer = (state = initialState, action: Action) => {
       return { ...state, loginModalOpen: true };
 
     case "register":
-      return { ...state, loginModalOpen: true };
+      return { ...state, registerModalOpen: true };
 
     default:
       return state;
