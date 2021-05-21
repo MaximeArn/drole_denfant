@@ -1,30 +1,11 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import Header from "../Header/Header";
 import "./App.scss";
 
 function App() {
-  const dispatch = useDispatch();
   return (
     <div className="App">
-      <header>
-        <p>drole d'enfant</p>
-        <div className="auth-buttons">
-          <button
-            onClick={() => {
-              dispatch({ type: "login" });
-            }}
-          >
-            connexion
-          </button>
-          <button
-            onClick={() => {
-              dispatch({ type: "register" });
-            }}
-          >
-            s'enregistrer
-          </button>
-        </div>
-      </header>
+      <Header />
     </div>
   );
 }

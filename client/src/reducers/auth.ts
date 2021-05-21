@@ -7,10 +7,10 @@ const initialState = {
 
 const authReducer: Reducer = (state = initialState, action: Action) => {
   switch (action.type) {
-    case "login":
+    case "loginModal":
       return { ...state, loginModalOpen: true };
 
-    case "register":
+    case "registerModal":
       return { ...state, registerModalOpen: true };
 
     default:
