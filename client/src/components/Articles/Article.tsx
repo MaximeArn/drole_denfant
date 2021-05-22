@@ -1,10 +1,11 @@
 import React from "react";
-import tshirt from "./tshirt.jpeg";
+import { ArticleProps } from "../../types/article";
+import tshirt from "./tshirt.png";
 
-const Article = () => {
+const Article = ({ position }: ArticleProps) => {
   return (
     <div className="article">
-      <img src={tshirt} alt="purple tshirt" />
+      <img className={position} src={tshirt} alt="purple tshirt" />
       <div className="article-text">
         <h3>Name</h3>
         <p>
@@ -12,6 +13,10 @@ const Article = () => {
           officia libero ut sit eius voluptatum, quia animi vero nihil ab itaque cum quas
           quos aperiam, nobis voluptatibus quam.
         </p>
+        <p className="price">
+          <strong>price : $40</strong>
+        </p>
+        <button className="buyBtn">Acheter</button>
       </div>
     </div>
   );

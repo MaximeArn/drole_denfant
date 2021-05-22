@@ -3,5 +3,44 @@
 
   h2 {
     margin-bottom: 5rem;
+    text-decoration: underline;
+  }
+
+  .article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #000;
+
+    &-text {
+      padding: 4rem 0 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      p {
+        text-align: left;
+        // margin-bottom: ;
+      }
+
+      .price {
+        margin-bottom: 2rem;
+      }
+
+      .buyBtn {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    img {
+      width: 50%;
+      padding: 1rem;
+
+      &.right {
+        order: 2;
+      }
+    }
   }
 }
