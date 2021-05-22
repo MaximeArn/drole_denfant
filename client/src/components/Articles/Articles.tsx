@@ -1,10 +1,14 @@
 import React from "react";
-import tshirt from "./tshirt.jpeg";
+import Article from "./Article";
+import article from "./Article";
+import "./articles.scss";
 
 const Articles = () => {
   return (
-    <div classname="articles">
-      <img src={tshirt} alt="purple tshirt" />
+    <div className="articles">
+      <h2>Products</h2>
+      <Article />
+      <Article />
     </div>
   );
 };
