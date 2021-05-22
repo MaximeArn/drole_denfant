@@ -18,21 +18,19 @@ const Article = ({ position }: ArticleProps) => {
 
   return (
     <div className="article">
-      <div className="image">
-        <img
-          className={position}
-          src={tshirt}
-          alt="purple tshirt"
-          onMouseMove={(e) => handleMouthMove(e)}
-        />
-        <div
-          className="img-zoom"
-          style={{
-            backgroundPositionX: zoomPositionX,
-            backgroundPositionY: zoomPositionY,
-          }}
-        ></div>
-      </div>
+      <img
+        className={position}
+        src={tshirt}
+        alt="purple tshirt"
+        onMouseMove={(e) => handleMouthMove(e)}
+      />
+      <div
+        className="img-zoom"
+        style={{
+          backgroundPositionX: zoomPositionX,
+          backgroundPositionY: zoomPositionY,
+        }}
+      ></div>
       <div className="article-text">
         <h3>Name</h3>
         <p>
